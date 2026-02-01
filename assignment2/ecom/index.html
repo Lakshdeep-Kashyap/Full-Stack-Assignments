@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>E-commerce</title>
+</head>
+<body style="font-family: Arial; padding: 20px;">
+
+  <h2>E-commerce Product Page</h2>
+  <div style="margin-bottom: 20px;">
+    <label>Category:
+      <select id="categoryFilter">
+        <option value="all">All</option>
+      </select>
+    </label>
+
+    <label style="margin-left: 20px;">Sort By:
+      <select id="sortSelect">
+        <option value="name-asc">Name ↑</option>
+        <option value="name-desc">Name ↓</option>
+        <option value="price-asc">Price ↑</option>
+        <option value="price-desc">Price ↓</option>
+        <option value="rating-asc">Rating ↑</option>
+        <option value="rating-desc">Rating ↓</option>
+      </select>
+    </label>
+  </div>
+
+  <div id="products" style="display: flex; flex-wrap: wrap; gap: 10px;"></div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
